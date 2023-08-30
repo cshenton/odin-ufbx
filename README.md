@@ -18,9 +18,9 @@ Object Suzanne
 On Windows, `ufbx.lib` is produced with:
 
 ```powershell
-clang -c src/ufbx.c -o src/ufbx.obj -target x86_64-pc-windows-msvc
-lib /OUT:ufbx/ufbx.lib src/ufbx.obj
-rm src/ufbx.obj
+clang -c deps/ufbx.c -o deps/ufbx.obj -target x86_64-pc-windows-msvc -O3
+lib /OUT:ufbx/ufbx.lib deps/ufbx.obj
+rm deps/ufbx.obj
 ```
 
 Feel free to add builds for other platforms.
