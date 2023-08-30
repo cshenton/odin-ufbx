@@ -45,8 +45,6 @@ load_mesh :: proc() -> (indices: []u32, positions: [][3]f32, normals: [][3]f32, 
         normals = make([][3]f32, vertex_count)
         uvs = make([][2]f32, vertex_count)
 
-        fmt.println(mesh.num_faces, mesh.num_triangles)
-
         for i in 0..< vertex_count {
                 pos := mesh.vertex_position.values.data[mesh.vertex_position.indices.data[i]]
                 norm := mesh.vertex_normal.values.data[mesh.vertex_normal.indices.data[i]]
