@@ -6,12 +6,7 @@
 
 ## Running the Example
 
-From this directory, simply run `odin run example`. The output should look like:
-
-```powershell
-Object Suzanne
--> mesh with 358u faces
-```
+From this directory, simply run `odin run example`. You should see a spinning Suzanne head.
 
 ## Compiling `ufbx.c`
 
